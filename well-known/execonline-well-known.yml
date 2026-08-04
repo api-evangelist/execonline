@@ -1,0 +1,98 @@
+generated: '2026-08-04'
+method: probed
+source: live GET of /.well-known/* on every live execonline.com host
+summary: |
+  ExecOnline publishes NO first-party /.well-known/ discovery surface. Every well-known
+  path returned 404 on the marketing site (www), the ExecConnect community site
+  (connect), and both credentialed learning-platform hosts (platform, app).
+
+  Two /.well-known/security.txt documents DO return 200 on execonline.com subdomains —
+  but both are served by the SaaS vendor that hosts the subdomain, not by ExecOnline,
+  and both declare a Canonical: pointing back at the vendor's own domain. They are
+  recorded here verbatim as observed fact and attributed to their real owner. Neither
+  is an ExecOnline vulnerability-disclosure program, so this repo carries NO SecurityTxt
+  and NO Security pointer in apis.yml.
+
+  api.execonline.com resolves to GitHub Pages and answers HTTP 200 with an unconfigured
+  GitHub Pages HTML page for EVERY path, including all /.well-known/* paths. All of those
+  200s are rejected as SPA/catch-all false positives (HTML bodies, identical byte sizes).
+hosts:
+- host: www.execonline.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: platform.execonline.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: app.execonline.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: connect.execonline.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: status.execonline.com
+  hosted_by: Atlassian Statuspage
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: execonline-status-security.txt
+    owner: third-party
+    owner_name: Atlassian
+    canonical: https://www.atlassian.com/.well-known/security.txt
+    note: Atlassian Statuspage's own RFC 9116 document, served on ExecOnline's status
+      subdomain. Not an ExecOnline disclosure program.
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+- host: support.execonline.com
+  hosted_by: Intercom
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: execonline-support-security.txt
+    owner: third-party
+    owner_name: Intercom
+    canonical: https://app.intercom.com/.well-known/security.txt
+    note: Intercom's own RFC 9116 document (Bugcrowd program), served on ExecOnline's
+      help-center subdomain. Not an ExecOnline disclosure program.
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+- host: api.execonline.com
+  hosted_by: GitHub Pages (unconfigured custom domain)
+  rejected: true
+  rejection_reason: Answers HTTP 200 with an identical GitHub Pages HTML body for every
+    path probed, including all /.well-known/* paths and /openapi.json. Catch-all false
+    positive.
+first_party_documents: 0
+x-evidence:
+  probed: '2026-08-04'
+  method: curl -s -o /dev/null -w "%{http_code}" -L

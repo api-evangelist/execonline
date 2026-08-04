@@ -1,0 +1,207 @@
+generated: '2026-08-04'
+method: searched
+source: https://www.npmjs.com/search?q=execonline
+notes: |
+  IMPORTANT — these are NOT API client SDKs. ExecOnline publishes no public API, so it
+  publishes no client library for one. What the company does publish is CooperTS, a
+  first-party open-source TypeScript ecosystem of Elm-inspired functional-programming
+  utilities used to build its own React web application. Every package below is scoped
+  to @execonline-inc on npm and sourced from github.com/execonline-inc/CooperTS.
+
+  Because none of these is a client library for an ExecOnline API, this artifact carries
+  a `Packages` pointer in apis.yml but deliberately does NOT carry an `SDKs` pointer.
+  Emitting `SDKs` here would credit the ergonomics sdk_count check for something that is
+  not an SDK for this provider's API.
+
+  Registries probed with no first-party hit: PyPI (execonline -> 404), RubyGems (the two
+  Ruby repos in the GitHub org, `memorb` and `restforce_mock`, are forks of gems owned by
+  individual maintainers pjrebsch and ilyakatz, not ExecOnline-published packages),
+  Maven Central, NuGet, pkg.go.dev, Packagist, crates.io.
+registries_probed:
+- {registry: npm, result: 16 first-party packages under the @execonline-inc scope}
+- {registry: pypi, result: no first-party package (execonline -> HTTP 404)}
+- {registry: rubygems, result: no first-party package (org repos are forks of third-party gems)}
+- {registry: maven-central, result: none found}
+- {registry: nuget, result: none found}
+- {registry: pkg.go.dev, result: none found}
+- {registry: packagist, result: none found}
+- {registry: crates.io, result: none found}
+packages:
+- language: typescript
+  registry: npm
+  name: '@execonline-inc/appy'
+  version: 8.21.0
+  url: https://www.npmjs.com/package/@execonline-inc/appy
+  install: npm install @execonline-inc/appy
+  repository: https://github.com/execonline-inc/CooperTS
+  license: ISC
+  official: true
+  kind: utility-library
+  description: Call api patterns around ajaxian http tasks
+- language: typescript
+  registry: npm
+  name: '@execonline-inc/resource'
+  version: 6.21.0
+  url: https://www.npmjs.com/package/@execonline-inc/resource
+  install: npm install @execonline-inc/resource
+  repository: https://github.com/execonline-inc/CooperTS
+  official: true
+  kind: utility-library
+  description: Models JSON api resources
+- language: typescript
+  registry: npm
+  name: '@execonline-inc/translations'
+  version: 9.17.0
+  url: https://www.npmjs.com/package/@execonline-inc/translations
+  install: npm install @execonline-inc/translations
+  repository: https://github.com/execonline-inc/CooperTS
+  official: true
+  kind: utility-library
+  description: Support for typed and interpolatable translations
+- language: typescript
+  registry: npm
+  name: '@execonline-inc/collections'
+  version: 10.7.0
+  url: https://www.npmjs.com/package/@execonline-inc/collections
+  install: npm install @execonline-inc/collections
+  repository: https://github.com/execonline-inc/CooperTS
+  official: true
+  kind: utility-library
+  description: Utilities for working with collections of data
+- language: typescript
+  registry: npm
+  name: '@execonline-inc/numbers'
+  version: 4.10.0
+  url: https://www.npmjs.com/package/@execonline-inc/numbers
+  install: npm install @execonline-inc/numbers
+  repository: https://github.com/execonline-inc/CooperTS
+  official: true
+  kind: utility-library
+  description: Type safe number ops
+- language: typescript
+  registry: npm
+  name: '@execonline-inc/url'
+  version: 8.2.0
+  url: https://www.npmjs.com/package/@execonline-inc/url
+  install: npm install @execonline-inc/url
+  repository: https://github.com/execonline-inc/CooperTS
+  official: true
+  kind: utility-library
+  description: Safe URL parsing
+- language: typescript
+  registry: npm
+  name: '@execonline-inc/logging'
+  version: 6.4.0
+  url: https://www.npmjs.com/package/@execonline-inc/logging
+  install: npm install @execonline-inc/logging
+  repository: https://github.com/execonline-inc/CooperTS
+  official: true
+  kind: utility-library
+  description: Console and warnings and alerting for background logging
+- language: typescript
+  registry: npm
+  name: '@execonline-inc/decoders'
+  version: 6.5.0
+  url: https://www.npmjs.com/package/@execonline-inc/decoders
+  install: npm install @execonline-inc/decoders
+  repository: https://github.com/execonline-inc/CooperTS
+  official: true
+  kind: utility-library
+  description: Generally useful decoders that extend Jsonous
+- language: typescript
+  registry: npm
+  name: '@execonline-inc/maybe-adapter'
+  version: 4.7.0
+  url: https://www.npmjs.com/package/@execonline-inc/maybe-adapter
+  install: npm install @execonline-inc/maybe-adapter
+  repository: https://github.com/execonline-inc/CooperTS
+  official: true
+  kind: utility-library
+  description: Convert types to and from Maybeasy
+- language: typescript
+  registry: npm
+  name: '@execonline-inc/environment'
+  version: 5.7.0
+  url: https://www.npmjs.com/package/@execonline-inc/environment
+  install: npm install @execonline-inc/environment
+  repository: https://github.com/execonline-inc/CooperTS
+  official: true
+  kind: utility-library
+  description: Safely read environment configurations
+- language: typescript
+  registry: npm
+  name: '@execonline-inc/time'
+  version: 5.1.1
+  url: https://www.npmjs.com/package/@execonline-inc/time
+  install: npm install @execonline-inc/time
+  repository: https://github.com/execonline-inc/CooperTS
+  official: true
+  kind: utility-library
+  description: Time types for interacting with JavaScript
+- language: typescript
+  registry: npm
+  name: '@execonline-inc/time-distance'
+  version: 1.3.1
+  url: https://www.npmjs.com/package/@execonline-inc/time-distance
+  install: npm install @execonline-inc/time-distance
+  repository: https://github.com/execonline-inc/CooperTS
+  official: true
+  kind: utility-library
+  description: Computes differences between times and dates
+- language: typescript
+  registry: npm
+  name: '@execonline-inc/dom'
+  version: 3.3.0
+  url: https://www.npmjs.com/package/@execonline-inc/dom
+  install: npm install @execonline-inc/dom
+  repository: https://github.com/execonline-inc/CooperTS
+  official: true
+  kind: utility-library
+  description: DOM functions
+- language: typescript
+  registry: npm
+  name: '@execonline-inc/strings'
+  version: 1.1.0
+  url: https://www.npmjs.com/package/@execonline-inc/strings
+  install: npm install @execonline-inc/strings
+  repository: https://github.com/execonline-inc/CooperTS
+  official: true
+  kind: utility-library
+  description: Functions for manipulating strings
+- language: typescript
+  registry: npm
+  name: '@execonline-inc/error-handling'
+  version: 1.2.0
+  url: https://www.npmjs.com/package/@execonline-inc/error-handling
+  install: npm install @execonline-inc/error-handling
+  repository: https://github.com/execonline-inc/CooperTS
+  official: true
+  kind: utility-library
+  description: Functions to simplify error handling across monad types
+- language: typescript
+  registry: npm
+  name: '@execonline-inc/firebase-analytics-wrapper'
+  version: 2.1.0
+  url: https://www.npmjs.com/package/@execonline-inc/firebase-analytics-wrapper
+  install: npm install @execonline-inc/firebase-analytics-wrapper
+  repository: https://github.com/execonline-inc/CooperTS
+  official: true
+  kind: utility-library
+  description: Abstracts the use of the Firebase analytics package
+- language: typescript
+  registry: npm
+  name: cooper-ts
+  version: 0.0.8
+  url: https://www.npmjs.com/package/cooper-ts
+  install: npm install cooper-ts
+  repository: https://github.com/execonline-inc/CooperTS
+  official: true
+  kind: utility-library
+  description: An opinionated ecosystem for building react webapps with TypeScript
+x-evidence:
+  fetched: '2026-08-04'
+  urls:
+  - https://registry.npmjs.org/-/v1/search?text=execonline
+  - https://registry.npmjs.org/@execonline-inc/appy
+  - https://api.github.com/orgs/execonline-inc/repos
+  http_status: 200

@@ -1,17 +1,37 @@
 aid: execonline
 name: ExecOnline
-description: 'ExecOnline is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'ExecOnline is a New York-based B2B leadership-development company that
+  partners with top business schools — including UC Berkeley Executive Education, Chicago
+  Booth, Columbia, UVA Darden, Tuck at Dartmouth, Duke CE, IMD, Ivey, MIT Sloan, Stanford
+  GSB, Wharton and Yale — to deliver executive education online at enterprise scale.
+  Founded in 2012, it blends professor-led courses, one-on-one and group coaching, cohort
+  sessions and on-demand content into a single connected learning journey, and layers
+  an insights-and-reporting platform on top so enterprises can align learning outcomes
+  to business goals. ExecOnline acquired Teamraderie in 2026. Its learning platform is
+  a credentialed, customer-only web application at platform.execonline.com; ExecOnline
+  publishes no public developer portal, API documentation, or machine-readable API
+  contract, and no public API surface was discoverable as of this profile.'
+image: https://www.execonline.com/wp-content/uploads/2021/10/ExecOnline_yoast-cover_1200x627.jpg
 url: https://raw.githubusercontent.com/api-evangelist/execonline/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass-2026-08-04
 specificationVersion: '0.20'
 created: '2026-08-04'
 modified: '2026-08-04'
 tags:
 - Company
+- Education
+- Leadership Development
+- Executive Education
+- Corporate Learning
+- Learning and Development
+- EdTech
+- Coaching
+- Talent Development
+- Human Resources
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +40,67 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://forgeglobal.com/execonline_stock/
+  url: https://www.execonline.com/
+- type: About
+  url: https://www.execonline.com/about-us/
+- type: Blog
+  url: https://www.execonline.com/blog/
+- type: Support
+  url: https://support.execonline.com/en/
+- type: GitHubOrganization
+  url: https://github.com/execonline-inc
+- type: Login
+  url: https://platform.execonline.com/
+- type: TermsOfService
+  url: https://www.execonline.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.execonline.com/privacy-policy/
+- type: StatusPage
+  url: https://status.execonline.com/
+- type: Sla
+  url: https://www.execonline.com/sla/
+- type: Compliance
+  url: https://www.execonline.com/privacy-policy/
+- type: CodeOfConduct
+  url: https://www.execonline.com/code-of-conduct/
+- type: Careers
+  url: https://www.execonline.com/careers/
+- type: Contact
+  url: https://www.execonline.com/contact-us/
+- type: Packages
+  url: packages/execonline-packages.yml
+- type: Lifecycle
+  url: lifecycle/execonline-lifecycle.yml
+- type: Conformance
+  url: conformance/execonline-conformance.yml
+- type: DomainSecurity
+  url: security/execonline-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/execonline-vulnerability-disclosure.yml
+- type: LLMsTxt
+  url: llms/execonline-llms.txt
+x-enrichment:
+  date: '2026-08-04'
+  status: enriched
+  artifacts_added: 7
+  pass: local-v1
+x-no-api-surface:
+  assessed: '2026-08-04'
+  result: 'ExecOnline publishes no public API. Full STEP 0b contract discovery (REST
+    OpenAPI on every API/docs/console host root, GraphQL introspection, MCP tools/list,
+    A2A agent card at both the canonical and legacy well-known paths) returned no
+    machine-readable contract. See conformance/execonline-conformance.yml for the
+    complete host/path probe record and the rejected false positives.'
+  deliberately_not_emitted:
+  - {type: SDKs, reason: 'The 16 first-party @execonline-inc npm packages are TypeScript
+      application utilities (CooperTS), not client SDKs for an ExecOnline API.'}
+  - {type: WellKnown, reason: 'Zero first-party /.well-known/ documents; the only two
+      200s are Atlassian''s and Intercom''s own vendor security.txt files served on
+      execonline.com subdomains.'}
+  - {type: SecurityTxt, reason: 'Same — no first-party security.txt exists.'}
+  - {type: Security, reason: 'A security contact (security@execonline.com) is published
+      but no vulnerability-disclosure policy or bug-bounty program is.'}
+  - {type: ChangeLog, reason: '/latest-updates/ is a company news feed with no versions,
+      not a product changelog.'}
+  - {type: AgentCard, reason: 'Probe missed on every host; agent cards are search-only
+      and are never authored on a provider''s behalf.'}

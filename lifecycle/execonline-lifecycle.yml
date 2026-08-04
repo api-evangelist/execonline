@@ -1,0 +1,57 @@
+generated: '2026-08-04'
+method: searched
+source: https://www.execonline.com/sla/
+scope: |
+  ExecOnline publishes no public API, so there is no API versioning scheme, no API
+  deprecation policy, and no Sunset/Deprecation header contract to record. What it does
+  publish is a product-level SLA for its Learning Platform and a public status page.
+  This artifact captures that operational surface only.
+versioning:
+  scheme: null
+  current: null
+  docs: null
+  note: No public API and no published API versioning policy.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: No published deprecation or sunset policy for any public interface.
+sla:
+  url: https://www.execonline.com/sla/
+  uptime_target: '99.5%'
+  measurement_period: quarterly
+  scope: ExecOnline Learning Platform
+  exclusions:
+  - scheduled maintenance or downtime related to network, hardware or Products maintenance
+    or upgrades
+  remedy:
+    type: service credit
+    detail: 1.5% credit of one-fourth of annual fees when quarterly uptime falls below
+      99.5%
+    cap: cumulative credits capped at one-tenth of annual fees
+    claim_window: written claim within 30 days of quarter end
+  exclusive_remedy: true
+status_page: https://status.execonline.com/
+status_page_platform: Atlassian Statuspage
+status_page_machine_readable:
+  note: These are Atlassian Statuspage's standard v2 endpoints serving ExecOnline
+    incident data. They are a vendor-provided status feed, not an ExecOnline product API,
+    and are therefore NOT registered as an API in apis.yml.
+  endpoints:
+  - {url: 'https://status.execonline.com/api/v2/status.json', status: 200, format: json}
+  - {url: 'https://status.execonline.com/api/v2/summary.json', format: json}
+  - {url: 'https://status.execonline.com/history.rss', format: rss}
+release_notes:
+  url: https://www.execonline.com/latest-updates/
+  is_changelog: false
+  note: /latest-updates/ is a company news and press-release feed (most recent entries
+    2026-04-29, 2026-04-15, 2026-03-12). Entries carry no version numbers and describe
+    corporate milestones, not product releases. It does not qualify as a product
+    changelog, so no changelog/ artifact and no ChangeLog pointer were emitted.
+deprecated_operations: []
+x-evidence:
+  fetched: '2026-08-04'
+  urls:
+  - https://www.execonline.com/sla/
+  - https://status.execonline.com/api/v2/status.json
+  - https://www.execonline.com/latest-updates/
+  http_status: 200

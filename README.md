@@ -42,5 +42,23 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-ExecOnline is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/execonline_stock/
+ExecOnline is a New York-based B2B leadership-development company that partners with top business schools — UC Berkeley Executive Education, Chicago Booth, Columbia, UVA Darden, Tuck at Dartmouth, Duke CE, IMD, Ivey, MIT Sloan, Stanford GSB, Wharton and Yale — to deliver executive education online at enterprise scale. Founded in 2012, it blends professor-led courses, coaching, cohort sessions and on-demand content into one connected learning journey, with an insights-and-reporting layer that ties learning outcomes to business goals. ExecOnline acquired Teamraderie in 2026.
+
+## No public API
+
+As of **2026-08-04**, ExecOnline publishes **no public API**: no developer portal, no API documentation, and no machine-readable contract. Full contract discovery was run against every live host (`www`, `platform`, `app`, `connect`, `status`, `support`, and the `api` subdomain) covering OpenAPI/Swagger paths, GraphQL introspection, MCP `tools/list`, and the A2A agent card at both the canonical and legacy well-known paths — all missed. `api.execonline.com` points at an unconfigured GitHub Pages site that returns HTTP 200 HTML for every path and is recorded as a rejected false positive.
+
+The full probe record, including every host and path tried, is in [`conformance/execonline-conformance.yml`](conformance/execonline-conformance.yml).
+
+## What is in this profile
+
+| Artifact | What it holds |
+|---|---|
+| [`packages/`](packages/execonline-packages.yml) | 16 first-party `@execonline-inc` npm packages (the CooperTS TypeScript toolkit) — application utilities, **not** API client SDKs |
+| [`well-known/`](well-known/execonline-well-known.yml) | `/.well-known/` probe record; zero first-party documents (the two `security.txt` hits belong to Atlassian and Intercom) |
+| [`lifecycle/`](lifecycle/execonline-lifecycle.yml) | 99.5% quarterly SLA, Atlassian Statuspage, service-credit remedy |
+| [`conformance/`](conformance/execonline-conformance.yml) | ISO/IEC 27001:2013 certification, EU-U.S. / UK / Swiss-U.S. Data Privacy Framework, GDPR, CCPA |
+| [`security/`](security/) | Domain security probe (TLS/HSTS/SPF/DMARC/CAA/DNSSEC) and the vulnerability-disclosure posture |
+| [`llms/`](llms/execonline-llms.txt) | Generated `llms.txt` for agents, leading with the fact that there is no API to call |
+
+Links: [execonline.com](https://www.execonline.com/) · [GitHub org](https://github.com/execonline-inc) · [Status](https://status.execonline.com/) · [Secondary-market listing](https://forgeglobal.com/execonline_stock/)

@@ -1,0 +1,147 @@
+generated: '2026-08-04'
+method: searched
+source: https://www.execonline.com/privacy-policy/
+scope: |
+  ExecOnline has no public API and publishes no machine-readable API contract, so every
+  API-technical standard below is recorded as not-applicable/not-conformant on the basis
+  that there is no public interface to assess — not as a failure of an existing one.
+  The information-security and data-protection standards ARE real, third-party-certified
+  claims published in ExecOnline's own privacy policy.
+standards:
+- id: iso-27001
+  name: ISO/IEC 27001:2013
+  conforms: true
+  certified: true
+  evidence: 'Privacy policy: "ExecOnline is certified by a third party reviewer for
+    compliance with ISO/IEC 27001:2013"'
+  source: https://www.execonline.com/privacy-policy/
+- id: eu-us-dpf
+  name: EU-U.S. Data Privacy Framework
+  conforms: true
+  certified: true
+  evidence: Self-certified participant; certification published via dataprivacyframework.gov
+  source: https://www.execonline.com/privacy-policy/
+- id: uk-ext-dpf
+  name: UK Extension to the EU-U.S. Data Privacy Framework
+  conforms: true
+  certified: true
+  evidence: Certification asserted in privacy policy
+  source: https://www.execonline.com/privacy-policy/
+- id: swiss-us-dpf
+  name: Swiss-U.S. Data Privacy Framework
+  conforms: true
+  certified: true
+  evidence: Certification asserted in privacy policy
+  source: https://www.execonline.com/privacy-policy/
+- id: gdpr
+  name: EU General Data Protection Regulation
+  conforms: true
+  evidence: Privacy policy documents GDPR measures including Standard Contractual Clauses
+    (SCCs) and names a Data Protection Officer contact (privacy@execonline.com)
+  source: https://www.execonline.com/privacy-policy/
+- id: ccpa
+  name: California Consumer Privacy Act
+  conforms: true
+  evidence: Dedicated CCPA disclosures and consumer-rights section in the privacy policy
+  source: https://www.execonline.com/privacy-policy/
+- id: soc2
+  name: SOC 2
+  conforms: false
+  evidence: No SOC 2 report or attestation is publicly claimed on any ExecOnline page
+    searched.
+- id: openapi
+  name: OpenAPI Specification
+  conforms: false
+  evidence: No OpenAPI/Swagger document found on any host. See well-known/ and the
+    contract-discovery record below.
+- id: asyncapi
+  conforms: false
+  evidence: No event, streaming, or webhook surface is publicly documented.
+- id: graphql
+  conforms: false
+  evidence: No /graphql endpoint on any live host (status.execonline.com/graphql returns
+    the Statuspage SPA HTML shell, not a GraphQL endpoint).
+- id: mcp
+  name: Model Context Protocol
+  conforms: false
+  evidence: No hosted or documented MCP server.
+- id: a2a
+  name: A2A Agent Card
+  conforms: false
+  evidence: /.well-known/agent-card.json and /.well-known/agent.json return 404 on every
+    live host.
+- id: oauth2
+  conforms: false
+  evidence: No public OAuth authorization server; /.well-known/oauth-authorization-server
+    404 on every host.
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration 404 on every host.
+- id: rfc9116-security-txt
+  name: RFC 9116 security.txt
+  conforms: false
+  evidence: No first-party security.txt. The two 200 responses observed on
+    status./support. subdomains are Atlassian's and Intercom's own documents, each
+    declaring a Canonical pointing back to the vendor's domain.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No public API to assess.
+- id: rfc8594-sunset-header
+  conforms: false
+  evidence: No public API to assess.
+contract_discovery:
+  performed: '2026-08-04'
+  result: no machine-readable API contract found
+  hosts_probed:
+  - www.execonline.com
+  - execonline.com
+  - api.execonline.com
+  - app.execonline.com
+  - platform.execonline.com
+  - connect.execonline.com
+  - status.execonline.com
+  - support.execonline.com
+  hosts_nxdomain:
+  - developer.execonline.com
+  - developers.execonline.com
+  - docs.execonline.com
+  - client.execonline.com
+  - trust.execonline.com
+  - security.execonline.com
+  - help.execonline.com
+  paths_probed:
+  - /openapi.json
+  - /openapi.yaml
+  - /swagger.json
+  - /v1/openapi.json
+  - /api/v1/openapi.json
+  - /api-docs
+  - /docs
+  - /redoc
+  - /graphql
+  - /llms.txt
+  - /.well-known/agent-card.json
+  - /.well-known/agent.json
+  - /.well-known/security.txt
+  - /.well-known/openid-configuration
+  - /.well-known/oauth-authorization-server
+  - /.well-known/oauth-protected-resource
+  - /.well-known/api-catalog
+  - /.well-known/ai-plugin.json
+  false_positives_rejected:
+  - host: api.execonline.com
+    reason: Unconfigured GitHub Pages custom domain; returns HTTP 200 with an identical
+      HTML body for every path including /openapi.json and every /.well-known/* path.
+  - host: status.execonline.com
+    path: /graphql
+    reason: Statuspage single-page-app catch-all returning HTML, not a GraphQL endpoint.
+  documentation_evidence: 'https://www.execonline.com/system-requirements/ enumerates
+    every domain a customer must allowlist (Daily.co, Twilio, Xirsys, Marketo mail
+    domains, Alchemer, Box) and documents no API, SSO/SAML, SCIM, or LMS/LTI integration
+    surface.'
+x-evidence:
+  fetched: '2026-08-04'
+  urls:
+  - https://www.execonline.com/privacy-policy/
+  - https://www.execonline.com/system-requirements/
+  http_status: 200
