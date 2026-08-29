@@ -24,6 +24,9 @@ deliveryModel:
   method: derived
 image: https://www.execonline.com/wp-content/uploads/2021/10/ExecOnline_yoast-cover_1200x627.jpg
 url: https://raw.githubusercontent.com/api-evangelist/execonline/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "Its learning platform is a credentialed, customer-only web application at platform.execonline.com; ExecOnline publishes no public developer portal, API documentation, or machine-readable API contract,"
 x-type: company
 x-source: harvest:secondary-market
 x-tier: profiled
