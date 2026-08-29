@@ -11,6 +11,17 @@ description: 'ExecOnline is a New York-based B2B leadership-development company 
   a credentialed, customer-only web application at platform.execonline.com; ExecOnline
   publishes no public developer portal, API documentation, or machine-readable API
   contract, and no public API surface was discoverable as of this profile.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.execonline.com/wp-content/uploads/2021/10/ExecOnline_yoast-cover_1200x627.jpg
 url: https://raw.githubusercontent.com/api-evangelist/execonline/refs/heads/main/apis.yml
 x-type: company
