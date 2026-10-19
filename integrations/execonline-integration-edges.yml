@@ -1,0 +1,184 @@
+edges:
+- partner_name: npm registry
+  partner: npm
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (JavaScript/TypeScript)
+  evidence: https://www.npmjs.com/package/@execonline-inc/appy
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@execonline-inc/appy'
+      version: 8.21.0
+      released: '2022-11-09'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@execonline-inc/appy
+      repo_leg: github-org:execonline-inc
+      publisher_leg: org:execonline-inc
+      matched_by: github-org
+    - name: '@execonline-inc/collections'
+      version: 10.7.0
+      released: '2022-11-09'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@execonline-inc/collections
+      repo_leg: github-org:execonline-inc
+      publisher_leg: org:execonline-inc
+      matched_by: github-org
+    - name: '@execonline-inc/decoders'
+      version: 6.5.0
+      released: '2022-11-09'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@execonline-inc/decoders
+      repo_leg: github-org:execonline-inc
+      publisher_leg: org:execonline-inc
+      matched_by: github-org
+    - name: '@execonline-inc/dom'
+      version: 3.3.0
+      released: '2022-11-09'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@execonline-inc/dom
+      repo_leg: github-org:execonline-inc
+      publisher_leg: org:execonline-inc
+      matched_by: github-org
+    - name: '@execonline-inc/environment'
+      version: 5.7.0
+      released: '2022-11-09'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@execonline-inc/environment
+      repo_leg: github-org:execonline-inc
+      publisher_leg: org:execonline-inc
+      matched_by: github-org
+    - name: '@execonline-inc/error-handling'
+      version: 1.2.0
+      released: '2022-11-09'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@execonline-inc/error-handling
+      repo_leg: github-org:execonline-inc
+      publisher_leg: org:execonline-inc
+      matched_by: github-org
+    - name: '@execonline-inc/firebase-analytics-wrapper'
+      version: 2.1.0
+      released: '2022-11-09'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@execonline-inc/firebase-analytics-wrapper
+      repo_leg: github-org:execonline-inc
+      publisher_leg: org:execonline-inc
+      matched_by: github-org
+    - name: '@execonline-inc/logging'
+      version: 6.4.0
+      released: '2022-11-09'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@execonline-inc/logging
+      repo_leg: github-org:execonline-inc
+      publisher_leg: org:execonline-inc
+      matched_by: github-org
+    - name: '@execonline-inc/maybe-adapter'
+      version: 4.7.0
+      released: '2022-11-09'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@execonline-inc/maybe-adapter
+      repo_leg: github-org:execonline-inc
+      publisher_leg: org:execonline-inc
+      matched_by: github-org
+    - name: '@execonline-inc/numbers'
+      version: 4.10.0
+      released: '2022-11-09'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@execonline-inc/numbers
+      repo_leg: github-org:execonline-inc
+      publisher_leg: org:execonline-inc
+      matched_by: github-org
+    - name: '@execonline-inc/resource'
+      version: 6.21.0
+      released: '2022-11-09'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@execonline-inc/resource
+      repo_leg: github-org:execonline-inc
+      publisher_leg: org:execonline-inc
+      matched_by: github-org
+    - name: '@execonline-inc/strings'
+      version: 1.1.0
+      released: '2022-11-09'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@execonline-inc/strings
+      repo_leg: github-org:execonline-inc
+      publisher_leg: org:execonline-inc
+      matched_by: github-org
+    - name: '@execonline-inc/time'
+      version: 5.1.1
+      released: '2022-09-06'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@execonline-inc/time
+      repo_leg: github-org:execonline-inc
+      publisher_leg: org:execonline-inc
+      matched_by: github-org
+    - name: '@execonline-inc/time-distance'
+      version: 1.3.1
+      released: '2022-09-06'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@execonline-inc/time-distance
+      repo_leg: github-org:execonline-inc
+      publisher_leg: org:execonline-inc
+      matched_by: github-org
+    - name: '@execonline-inc/translations'
+      version: 9.17.0
+      released: '2022-11-09'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@execonline-inc/translations
+      repo_leg: github-org:execonline-inc
+      publisher_leg: org:execonline-inc
+      matched_by: github-org
+    - name: '@execonline-inc/url'
+      version: 8.2.0
+      released: '2022-11-09'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@execonline-inc/url
+      repo_leg: github-org:execonline-inc
+      publisher_leg: org:execonline-inc
+      matched_by: github-org
+    current: false
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
+generated: '2026-10-18'
+method: searched
+source:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
+checked:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
